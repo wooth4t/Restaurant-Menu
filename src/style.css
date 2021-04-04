@@ -1,0 +1,29 @@
+
+body {
+  text-align: center;
+  background-color: rgb(253, 253, 223);
+  font-family: 'Advent Pro', sans-serif;  
+}
+
+header {
+  text-align: center;
+  background-color: #299eff;
+  padding: 1rem;
+  border-bottom: 5px soild blue;
+  margin: 0;
+}
+
+h1  {
+  color: red;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #7e7500;
+  font-size: 2rem;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 1rem 1rem 4rem #aaaaaa;
+}
