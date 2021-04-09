@@ -1,29 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-weight: 500;
+}
 
 body {
   text-align: center;
-  background-color: rgb(253, 253, 223);
+  background-color: #eeeeee;
   font-family: 'Advent Pro', sans-serif;  
 }
 
 header {
+  padding: 4rem 0;
+  background-color: #534e52;
   text-align: center;
-  background-color: #299eff;
-  padding: 1rem;
-  border-bottom: 5px soild blue;
-  margin: 0;
+
 }
 
 h1  {
-  color: red;
-  font-size: 2rem;
+  font-size: 5rem;
+  color: #ffd369;
+  margin: 1rem;
 }
 
 h2 {
-  color: #7e7500;
-  font-size: 2rem;
+  color: #965d62;
 }
 
 img {
-  border-radius: 50%;
   box-shadow: 1rem 1rem 4rem #aaaaaa;
+}
+
+nav {
+  background-color: #ffd369;
+}
+
+article {
+  margin: 1rem auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #534e52;
+  text-decoration: none;
+  display: block;
+  font-size: 2em;
+  padding: 1rem 2rem;
+  transition-duration: 0.5s;
+}
+
+.nav-link:hover {
+  background-color: #d4b05c;
+  text-decoration: none;
+}
+
+.hero-section {
+  margin: 0 auto;
+  width: 80%;
+  height: 20rem; 
+  overflow: hidden;
+ /*overflow only works with specific height
+ width 100% is 100% of parent element*/
+}
+
+.main-section {
+width: 80%;
+margin: 1rem auto;
+}
+
+.section-heading {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0.2rem 0;
+}
+
+p {
+  padding: 0 20%;
+  line-height: 1.5;
+}
+
+/* Table Styles */
+
+.menu-section {
+  margin: 0.5rem auto;
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+caption {
+  font-size: 1.2rem;
+  margin: 0.5rem auto;
+}
+
+tr:nth-child(even) {
+  background-color: #d1d1d1;
+  color: #965d62;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffd46e;
+  color: #965d62;
+}
+
+th, td {
+  padding: 0.5rem 0;
+}
+
+th {
+  background-color: #965d62;
+  color: #ffd46e
+}
+
+th:last-child,
+td:last-child {
+  width: 20%;
+}
+
+footer {
+  background-color: #534e52;
+  color: #d4b05c;
+  padding: 2rem 0; 
 }
