@@ -141,3 +141,8 @@ footer {
   color: #d4b05c;
   padding: 2rem 0; 
 }
+
+footer .social-link {
+ color: #d4b05c; 
+ margin-right: 5px;
+}
