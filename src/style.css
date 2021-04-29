@@ -16,7 +16,6 @@ header {
   padding: 4rem 0;
   background-color: #534e52;
   text-align: center;
-
 }
 
 h1  {
@@ -55,10 +54,10 @@ article {
 
 .nav-link {
   color: #534e52;
-  text-decoration: none;
   display: block;
   font-size: 2em;
   padding: 1rem 2rem;
+  text-decoration: none;
   transition-duration: 0.5s;
 }
 
@@ -72,19 +71,34 @@ article {
 }
 
 .nav-list {
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
+
 .visible li {
   display: block;
 }
 
 .hero-section {
+  position: relative;
   margin: 0 auto;
   width: 80%;
   height: 20rem; 
   overflow: hidden;
  /*overflow only works with specific height
  width 100% is 100% of parent element*/
+}
+
+.slide {
+ display: block;
+ position: absolute; /*takes top left corner and aligns it with the containing element which is the class slide*/
+ top: 0;  /* how far from its parents element we want it to be.aligns the top of the image. use bottom to align the bottom*/
+ left: 0;
+ opacity: 0;
+ transition: opacity 1s;
+}
+
+.currentSlide {
+  opacity: 1;
 }
 
 .main-section {
@@ -174,6 +188,9 @@ footer .social-link {
     font-size: 1rem;
     padding: .5rem 1rem;
   }
+  .nav-list {
+    flex-wrap: wrap; 
+  }
   .main-section {
     width: 95%;
     margin: 0.5rem auto;
@@ -182,7 +199,6 @@ footer .social-link {
     display: none;
     width: 100%;
   }
-
   .nav-header, .nav-toggle {
     display: block;
   }
