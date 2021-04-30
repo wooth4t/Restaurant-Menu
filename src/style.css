@@ -15,13 +15,11 @@ body {
 header {
   padding: 4rem 0;
   background-color: #534e52;
-  text-align: center;
 }
 
 h1  {
   font-size: 5rem;
   color: #ffd369;
-  margin: 1rem;
 }
 
 h2 {
@@ -38,10 +36,6 @@ nav {
   background-color: #ffd369;
 }
 
-article {
-  margin: 1rem auto;
-}
-
 .nav-list {
   display: flex;
   justify-content: center;
@@ -53,11 +47,12 @@ article {
 }
 
 .nav-link {
-  color: #534e52;
   display: block;
-  font-size: 2em;
   padding: 1rem 2rem;
+  width: 100%;
+  color: #534e52;
   text-decoration: none;
+  font-size: 2em;
   transition-duration: 0.5s;
 }
 
@@ -70,19 +65,11 @@ article {
   display: none;
 }
 
-.nav-list {
-  flex-wrap: wrap;
-}
-
-.visible li {
-  display: block;
-}
-
 .hero-section {
   position: relative;
   margin: 0 auto;
   width: 80%;
-  height: 20rem; 
+  height: 15rem; 
   overflow: hidden;
  /*overflow only works with specific height
  width 100% is 100% of parent element*/
@@ -91,7 +78,7 @@ article {
 .slide {
  display: block;
  position: absolute; /*takes top left corner and aligns it with the containing element which is the class slide*/
- top: 0;  /* how far from its parents element we want it to be.aligns the top of the image. use bottom to align the bottom*/
+ bottom: 0;  /* how far from its parents element we want it to be.aligns the top of the image. use bottom to align the bottom*/
  left: 0;
  opacity: 0;
  transition: opacity 1s;
@@ -101,9 +88,30 @@ article {
   opacity: 1;
 }
 
+.button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  color: #d4b05c;
+  background-color: #534e52;
+  padding: .5rem .5rem;
+}
+
+.button i {
+  font-size: 2rem;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
 .main-section {
-width: 80%;
-margin: 1rem auto;
+  width: 80%;
+  margin: 1rem auto;
 }
 
 .section-heading {
@@ -125,7 +133,7 @@ p {
 /* Table Styles */
 
 .menu-section {
-  margin: 0.5rem auto;
+  margin: 3rem auto;
   width: 80%;
 }
 
@@ -150,7 +158,8 @@ tr:nth-child(odd) {
 }
 
 th, td {
-  padding: 0.5rem 0;
+  text-align: left;
+  padding: 0.5rem 0 0.5rem 2rem;
 }
 
 th {
@@ -163,6 +172,11 @@ td:last-child {
   width: 20%;
 }
 
+.food-app {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
 footer {
   background-color: #534e52;
   color: #d4b05c;
@@ -172,6 +186,7 @@ footer {
 footer .social-link {
  color: #d4b05c; 
  margin-right: 5px;
+ text-decoration: none;
 }
 
 @media all and (max-width: 426px) {
@@ -184,44 +199,50 @@ footer .social-link {
   h2 {
     font-size: 1.3rem;
   }
-  .nav-link {
-    font-size: 1rem;
-    padding: .5rem 1rem;
-  }
-  .nav-list {
-    flex-wrap: wrap; 
-  }
-  .main-section {
-    width: 95%;
-    margin: 0.5rem auto;
-  }
   .nav-item {
     display: none;
     width: 100%;
   }
+  .nav-link {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  .nav-link:hover {
+    text-decoration: none;
+  }
   .nav-header, .nav-toggle {
     display: block;
   }
-  .nav-header {
+ .nav-header {
     width: 80%;
   }
   .nav-toggle {
     width: 20%;
   }
+  .nav-list {
+    flex-wrap: wrap; 
+  }
+  .visible li {
+    display: block;
+  }
   .hero-section {
   width: 100%;
   height: 3rem; 
-}
-section.main-section img {
- width: 60%; 
-}
-p {
-  padding: 0 5%;
-}
-footer {
-  padding: 1rem 0;
-}
-footer p {
-  font-size: .75rem;
-}
+  }
+  .main-section {
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+  .main-section img {
+    width: 60%; 
+  }
+  p {
+    padding: 0 5%;
+  }
+  footer {
+    padding: 1rem 0;
+  }
+  footer p {
+    font-size: .75rem;
+  }
 }
