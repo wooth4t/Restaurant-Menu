@@ -91,10 +91,11 @@ nav {
 .button {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: #d4b05c;
   background-color: #534e52;
   padding: .5rem .5rem;
+  transform: scale(0.75) translate(5px, 50%);
 }
 
 .button i {
@@ -111,7 +112,7 @@ nav {
 
 .main-section {
   width: 80%;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .section-heading {
@@ -139,7 +140,8 @@ p {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 caption {
@@ -172,9 +174,12 @@ td:last-child {
   width: 20%;
 }
 
-.food-app {
+.booking-app img, .delivery-app img {
+  margin: .5rem;
+}
+
+.delivery-app a {
   text-decoration: none;
-  margin-right: 1rem;
 }
 
 footer {
